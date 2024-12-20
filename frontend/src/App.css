@@ -1,0 +1,302 @@
+/* CSS Styles */
+
+.app {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+
+  height: 100vh;
+}
+.menu-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+  background-color: white;
+  font-family: Arial, sans-serif;
+  border-bottom: 1px solid #ddd;
+
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff4d00; /* Matches the orange tone of the logo */
+}
+
+.menu-links a,
+.account-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.menu-links a:hover,
+.account-links a:hover {
+  color: #ff4d00; /* Highlight with orange on hover */
+}
+
+.account-links {
+  font-size: 14px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .menu-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-links,
+  .account-links {
+    margin-top: 10px;
+  }
+
+  .menu-links a,
+  .account-links a {
+    margin: 5px 0;
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 20px;
+  }
+
+  .menu-links a,
+  .account-links a {
+    font-size: 12px;
+  }
+}
+
+.header {
+  background: url('/public/images/61763.jpg') no-repeat center/cover;
+  position: relative;
+  padding: 40px 20px;
+  
+  text-align: center;
+  color: #ffffff;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-title {
+  font-size: 3rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.header-subtitle {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.header-cta {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.header-cta button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  color: black;
+  background-color: white;
+}
+
+.start-selling {
+  background-color: #2a9d8f;
+  color: #ffffff;
+}
+
+.chat-consultant {
+  background-color: transparent;
+  color: #2a9d8f;
+  border: 2px solid #2a9d8f;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  color: #ffffff;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-item strong {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.section {
+  padding: 20px;
+  text-align: center;
+}
+.section-a{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+ }
+ .sec-head{
+  text-align: center;
+ }
+.section-b{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e63946;
+  margin-top: 20px;
+}
+.sectio-b p{
+  padding-bottom: 25px;
+}
+.sub-cont{
+  display: flex;
+  flex-direction: column;
+  
+  font-size: small;
+  padding: 20px;
+ 
+}
+.sub-cont text{
+  margin-bottom: 20px;
+}
+
+.section1 {
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.cont-1{
+  
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ margin-bottom: -2;
+ margin-right: 10px;
+}
+
+
+.section2 {
+  background-color: #ffffff;
+  
+  
+}
+.person{
+  width: 250px;
+  height: 200px;
+}
+
+.section3 {
+  background-color: #e63946;
+  color: #ffffff;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+  background-color: rgb(236, 231, 231);
+ 
+ border-radius: 3px;
+}
+
+
+.testimonial p {
+  max-width: 600px;
+  margin: 10px 0;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+}
+
+.cta-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: black;
+  font-size: 16px;
+  background-color: white;
+}
+
+.footer {
+  background-color: #333333;
+  color: #ffffff;
+
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-columns div {
+  margin: 10px;
+}
+
+.footer-columns h4 {
+  margin-bottom: 10px;
+}
+
+.footer-columns ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-columns ul li {
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .header-cta {
+    flex-direction: column;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .testimonial {
+    flex-direction: column;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 10px;
+   
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
